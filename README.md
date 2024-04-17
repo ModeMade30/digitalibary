@@ -11,5 +11,44 @@ Jadi disini saya membuat aplikasi perpustakaan berbasis digital,yang dimana ada 
 # Sistem Aplikasi
 Sistem yang saya buat itu membagi fungsi setiap usernya,Berikut Pembagian Fungsi Setiap Usernya:
 - Admin
-  * Manajemen Buku
-    * Mengubah bku
+  * Dashboard
+    * Melihat Total Buku
+    * Melihat Total Buku Yang Tersedia
+    * Melihat Total Buku Yang Tidak Tersedia
+    * Melihat Total Kategori Buku
+    * Melihat Total Peminjaman
+    * Melihat Total Koleksipribadi Semua User
+    * Melihat Total UlasanBuku Semua User
+    * Melihat Total Semua User
+  * Buku
+    * Melihat Buku 
+    * Menambah Buku
+    * Mengubah Buku
+    * Menghapus buku
+    * Mencari Buku Berdasarkan Judul Buku
+  * Kategoribuku
+    * Melihat Kategori Buku 
+    * Menambah Kategori Buku
+    * Mengubah Kategori Buku
+    * Menghapus Kategori Buku
+    * Mencari Kategori Buku Berdasarkan Nama Kategori
+  * Peminjaman Buku
+    * Melihat Peminjaman
+    * Mengedit Peminjaman
+    * Menghapus Peminjaman
+    * Generate Laporan Sesuai Peminjaman
+    * Mencari Peminjaman Berdasarkan Nama Lengkap User
+    * Mengkonfirmasi Peminjaman
+    * Mengkonfirmasi Pengembalian
+  * Koleksi Pribadi
+    * Melihat Koleksipribadi Semua User
+    * Menghapus Koleksipribadi
+  * Ulasan Buku
+    * Melihat Ulasanbuku Semua User
+    * Mengedit Ulasanbuku
+    * Menghapus Ulasanbuku
+  * User
+    * Melihat Semua User
+    * Registrasi Semua Role
+    * Login
+    * Logout
