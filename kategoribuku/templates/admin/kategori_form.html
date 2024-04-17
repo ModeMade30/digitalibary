@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Kategori Buku</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn {
+            margin-top: 10px;
+        }
+        .button-container {
+            margin-top: 20px; /* Add some space between buttons */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Kategori Buku</h2>
+        <form method="post">
+            {% csrf_token %}
+            <!-- Field-field formulir menggunakan elemen HTML5 -->               
+            <div class="form-group">
+                <label for="namakategori">Nama Kategori:</label>
+                <input type="text" class="form-control" id="namakategori" name="namakategori" value="{{ form.instance.namakategori }}">
+            </div>
+            <!-- Tombol submit dan tombol kembali -->
+            <div class="row button-row">
+                <div class="col-md-6">
+                    <a href="{% url 'Kategoribuku:read' %}" class="btn btn-danger btn-block">
+                        <i class="fas fa-arrow-left"></i> Kembali
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary btn-block">Simpan</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

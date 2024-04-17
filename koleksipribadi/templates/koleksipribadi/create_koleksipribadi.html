@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Koleksi Pribadi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn {
+            margin-top: 10px;
+        }
+        .button-container {
+            margin-top: 20px; /* Add some space between buttons */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Koleksi Pribadi</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="bukuid">Judul Buku:</label>
+                <input type="text" class="form-control" id="bukuid_display" value="{{ buku.judul }}" readonly>
+            </div>             
+            <!-- Tombol submit dan tombol kembali -->
+            <div class="row button-row">
+                <div class="col-md-6">
+                    <a href="{% url 'buku:list_peminjam' %}" class="btn btn-danger btn-block">
+                        <i class="fas fa-arrow-left"></i> Kembali
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary btn-block">Simpan</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
