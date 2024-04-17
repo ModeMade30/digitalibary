@@ -8,4 +8,8 @@ Jadi disini saya membuat aplikasi perpustakaan berbasis digital,yang dimana ada 
 - Python
 - Django
 
-
+# Sistem Aplikasi
+Sistem yang saya buat itu membagi fungsi setiap usernya,Berikut Pembagian Fungsi Setiap Usernya:
+- Admin
+  * Manajemen Buku
+    * Mengubah bku
