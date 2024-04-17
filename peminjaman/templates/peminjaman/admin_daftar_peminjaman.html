@@ -61,12 +61,12 @@
                                   <a href="{% url 'Peminjaman:update_admin' pinjam.peminjamanid %}" class="ni ni-fat-delete text-red" title="Ubah" style="margin-right: 5px;"></a>
                                   <a href="#" class="ni ni-fat-remove text-red" title="Hapus" style="margin-right: 5px;" onclick="showDeleteConfirmationModal('{% url 'Peminjaman:delete_admin' pinjam.peminjamanid %}')"></a>
                                   <a href="{% url 'Peminjaman:generate_laporan_peminjaman' pinjam.peminjamanid %}" class="ni ni-fat-add text-blue" title="Generate Laporan" style="margin-right: 5px;"></a>
-                                  <!-- Data peminjaman lainnya -->
                                   {% if pinjam.statuspeminjaman == 'Dipinjam' %}
-                                      <a href="{% url 'Peminjaman:konfirmasi_peminjaman' pinjam.peminjamanid %}" class="btn btn-primary">Konfirmasi Peminjaman</a>
-                                  {% elif pinjam.statuspeminjaman == 'Konfirmasi' %}
-                                      <a href="{% url 'Peminjaman:konfirmasi_pengembalian' pinjam.peminjamanid %}" class="btn btn-warning">Konfirmasi Pengembalian</a>
-                                  {% endif %}
+                                  <a href="{% url 'Peminjaman:konfirmasi_peminjaman' pinjam.peminjamanid %}" class="btn btn-primary"><i class="fas fa-check"></i> Konfirmasi Peminjaman</a>
+                                {% elif pinjam.statuspeminjaman == 'Konfirmasi' %}
+                                  <a href="{% url 'Peminjaman:konfirmasi_pengembalian' pinjam.peminjamanid %}" class="btn btn-warning"><i class="fas fa-arrow-circle-left"></i> Konfirmasi Pengembalian</a>
+                                {% endif %}
+                                </td>
                               </td>
                           </tr>
                           {% endfor %}
