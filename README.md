@@ -10,7 +10,7 @@ Jadi disini saya membuat aplikasi perpustakaan berbasis digital,yang dimana ada 
 
 # Sistem Aplikasi
 Sistem yang saya buat itu membagi fungsi setiap usernya,Berikut Pembagian Fungsi Setiap Usernya:
-- Admin
+- # Admin
   * Dashboard
     * Melihat Total Buku
     * Melihat Total Buku Yang Tersedia
@@ -52,7 +52,7 @@ Sistem yang saya buat itu membagi fungsi setiap usernya,Berikut Pembagian Fungsi
     * Registrasi Semua Role
     * Login
     * Logout
-- Petugas
+- # Petugas
   * Dashboard
     * Melihat Total Buku
     * Melihat Total Buku Yang Tersedia
@@ -85,7 +85,7 @@ Sistem yang saya buat itu membagi fungsi setiap usernya,Berikut Pembagian Fungsi
   * User
     * Login
     * Logout
-- Peminjam
+- # Peminjam
   * Dashboard
     * Melihat Total Buku
     * Melihat Total Buku Yang Tersedia
